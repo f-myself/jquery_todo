@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="todo">
+        <h1>ToDoList</h1>
+        <ul class="js_list"></ul>
+        <input type="text" class="js_add_input">
+        <button class="js_add_button">Add</button>
+    </div>
+    <script type="text/template" id="todo_item_template">
+        <button class="js_item_remove_btn" type="button">X</button>
+        <button class="js_item_edit_btn" type="button">Edit</button>
+        <button class="js_item_apply_btn" type="button" style="display: none;">Apply</button>
+        <input class="js_item_input" type="text" value="{{val}}" style="display: none;">
+        <span class="js_item_text">{{val}}</span>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./js/todo.js"></script>
+</body>
+</html>
